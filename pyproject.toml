@@ -1,0 +1,22 @@
+[project]
+name = "hands-on-agents"
+version = "0.1.0"
+description = "Companion code for Hands-On Agents (Python)"
+requires-python = ">=3.10"
+dependencies = [
+  "requests==2.32.3",
+  "python-dotenv==1.0.1",
+  "pydantic==2.8.2",
+  "tiktoken==0.7.0",
+]
+
+[tool.pytest.ini_options]
+minversion = "8.0"
+addopts = "-q"
+testpaths = ["tests"]
+
+[tool.black]
+line-length = 100
+
+[tool.ruff]
+line-length = 100
